@@ -36,7 +36,7 @@ npm install
 npm run dev
 ```
 
-Az alkalmazást ezután a http://localhost:3000/ címen érjük el.  
+Az alkalmazást ezután a <a href="http://localhost:3000/" target="_blank" rel="noopener">http://localhost:3000/</a> címen érjük el.  
 A minta `HelloWorld` komponens törlését követően lássunk neki a munkához.
 
 Az egyszerűség kedvéért most egyetlen komponensben fogunk dolgozni, de egy való életbeli alkalmazás esetén ügyeljünk a komponensek és felelősségek különválasztására. Szükségünk lesz egy tömbre, amiben a teendőket tároljuk, illetve egy inputra, ahol azokat felvihetjük.
@@ -106,7 +106,7 @@ export default {
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 
-Máris látható, hogy működik a DOM és a model közötti szinkron! Fontos, hogy render kontextusban (ez a `setup` függvény által visszaadott objektum) a `ref` kicsomagolására nincs szükség (vagyis nem kell `todo.value`-ként hivatkoznunk rá), ez [automatikusan megtörténik](https://v3.vuejs.org/guide/reactivity-fundamentals.html#ref-unwrapping).
+Máris látható, hogy működik a DOM és a model közötti szinkron! Fontos, hogy render kontextusban (ez a `setup` függvény által visszaadott objektum) a `ref` kicsomagolására nincs szükség (vagyis nem kell `todo.value`-ként hivatkoznunk rá), ez <a href="https://v3.vuejs.org/guide/reactivity-fundamentals.html#ref-unwrapping" target="_blank" rel="noopener">automatikusan megtörténik</a>.
 
 ### Teendők listázása és hozzáadása
 
@@ -292,6 +292,6 @@ Ezzel készen is vagyunk!
 
 Izgalmas lesz látni, hogy miként alakulnak át a nagyobb kódbázisok a közeljövőben és milyen Composition API alapú megoldásokkal fog előrukkolni a fejlesztői közösség.
 
-A cikkben csak a felszínt kapargattuk, ha felkeltette az érdeklődésed és szeretnél még többet megtudni róla, akkor javaslom a [dokumentáció tanulmányozását](https://v3.vuejs.org/guide/composition-api-introduction.html), illetve a már erre épülő megoldásokat, mint például a [VueUse](https://vueuse.js.org/), ami egy szép gyűjteménye alapvető utility függvényeknek.
+A cikkben csak a felszínt kapargattuk, ha felkeltette az érdeklődésed és szeretnél még többet megtudni róla, akkor javaslom a <a href="https://v3.vuejs.org/guide/composition-api-introduction.html" target="_blank" rel="noopener">dokumentáció tanulmányozását</a>, illetve a már erre épülő megoldásokat, mint például a <a href="https://vueuse.js.org" target="_blank" rel="noopener">VueUse</a>, ami egy szép gyűjteménye alapvető utility függvényeknek.
 
-<base-note>A cikkben elkészített projekt megtalálható [GitHub-on](https://github.com/markuphu/vue3-todo-example) és [CodePen-en](https://codepen.io/collection/DjRrBv).</base-note>
+<base-note>A cikkben elkészített projekt megtalálható <a href="https://github.com/markuphu/vue3-todo-example" target="_blank" rel="noopener">GitHub-on</a> és <a href="https://codepen.io/collection/DjRrBv" target="_blank" rel="noopener">CodePen-en</a>.</base-note>
