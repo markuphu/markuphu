@@ -13,7 +13,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'markup.hu leírása'
+        content: 'Légrádi Szabolcs szakmai blogja webfejlesztéshez kapcsolódó témákban.'
       }
     ]
   }
