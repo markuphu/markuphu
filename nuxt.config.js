@@ -15,6 +15,41 @@ export default {
         hid: 'description',
         name: 'description',
         content: 'Légrádi Szabolcs szakmai blogja webfejlesztéshez kapcsolódó témákban.'
+      },
+      {
+        hid: 'og:title',
+        name: 'og:title',
+        content: '<markup>',
+      },
+      {
+        hid: 'og:description',
+        name: 'og:description',
+        content: 'Légrádi Szabolcs szakmai blogja webfejlesztéshez kapcsolódó témákban.',
+      },
+      {
+        hid: 'og:type',
+        property: 'og:type',
+        content: 'website',
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://markup.hu',
+      },
+      {
+        hid: 'twitter:url',
+        name: 'twitter:url',
+        content: 'https://markup.hu',
+      },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: '<markup>',
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: 'Légrádi Szabolcs szakmai blogja webfejlesztéshez kapcsolódó témákban.'
       }
     ]
   }

@@ -3,6 +3,7 @@ title: Vue 3 Composition API bemutatása
 description: "Bemutatkozik a Composition API: kiegészítő, függvény alapú API-k gyűjteménye, amelyek a komponens logika rugalmas kompozícióját teszik lehetővé."
 author:
   name: Légrádi Szabolcs
+tags: ["Vue.js", "Composition API"]
 ---
 
 # Vue 3 Composition API bemutatása
@@ -82,7 +83,7 @@ A `ref` a Reactive Reference, vagyis reaktív referencia rövidítése, nem csin
 ```vue{7,11}[components/TodoList.vue]
 <template>
   <input type="text" v-model="todo" placeholder="Teendő">
-  {{ todo }}
+  <p>{{ todo }}</p>
 </template>
 
 <script>
