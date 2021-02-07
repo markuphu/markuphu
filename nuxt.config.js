@@ -46,6 +46,8 @@ export default {
         property: 'og:image',
         content: '',
       },
+      { name: 'twitter:site', content: '@szlegradi' },
+      { name: 'twitter:card', content: 'summary_large_image' },
       {
         hid: 'twitter:url',
         name: 'twitter:url',
