@@ -5,23 +5,20 @@
 <script>
 export default {
   head () {
+    const title = `${this.article.title} - <markup>`
+
     return {
-      title: `${this.article.title} - <markup>`,
+      title,
 
       meta: [
         {
+          hid: 'title',
+          name: 'title',
+          content: title
+        },
+        {
           hid: 'description',
           name: 'description',
-          content: this.article.description,
-        },
-        {
-          hid: 'og:title',
-          name: 'og:title',
-          content: this.article.title,
-        },
-        {
-          hid: 'og:description',
-          name: 'og:description',
           content: this.article.description,
         },
         {
@@ -35,6 +32,21 @@ export default {
           content: `https://markup.hu/cikkek/${this.$route.params.slug}`,
         },
         {
+          hid: 'og:title',
+          name: 'og:title',
+          content: title,
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: this.article.description,
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.article.image ?? '',
+        },
+        {
           hid: 'twitter:url',
           name: 'twitter:url',
           content: `https://markup.hu/cikkek/${this.$route.params.slug}`,
@@ -42,7 +54,7 @@ export default {
         {
           hid: 'twitter:title',
           name: 'twitter:title',
-          content: this.article.title,
+          content: title,
         },
         {
           hid: 'twitter:description',
@@ -55,29 +67,40 @@ export default {
           content: this.article.image ?? '',
         },
         {
-          hid: 'og:image',
-          property: 'og:image',
-          content: this.article.image ?? '',
+          hid: 'twitter:label1',
+          name: 'twitter:label1',
+          content: 'Written by'
         },
         {
+          hid: 'twitter:data1',
+          name: 'twitter:data1',
+          content: this.article.author.name.split(' ').reverse().join(' ')
+        },
+        {
+          hid: 'twitter:label2',
+          name: 'twitter:label2',
+          content: 'Filed under'
+        },
+        {
+          hid: 'twitter:data2',
+          name: 'twitter:data2',
+          content: this.article.tags ? this.article.tags.join(', ') : '',
+        },
+        {
+          hid: 'article:published_time',
           property: 'article:published_time',
           content: this.article.createdAt,
         },
         {
+          hid: 'article:modified_time',
           property: 'article:modified_time',
           content: this.article.updatedAt,
         },
         {
+          hid: 'article:tag',
           property: 'article:tag',
           content: this.article.tags ? this.article.tags.join(', ') : '',
-        },
-        { name: 'twitter:label1', content: 'Written by' },
-        { name: 'twitter:data1', content: this.article.author.name.split(' ').reverse().join(' ') },
-        { name: 'twitter:label2', content: 'Filed under' },
-        {
-          name: 'twitter:data2',
-          content: this.article.tags ? this.article.tags.join(', ') : '',
-        },
+        }
       ]
     }
   },
