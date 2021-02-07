@@ -4,6 +4,7 @@ description: "Bemutatkozik a Composition API: kiegészítő, függvény alapú A
 author:
   name: Légrádi Szabolcs
 tags: ["Vue.js", "Composition API"]
+image: images/covers/vue-3-composition-api-bemutatasa.jpg
 ---
 
 # Vue 3 Composition API bemutatása

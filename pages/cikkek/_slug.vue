@@ -5,7 +5,7 @@
 <script>
 export default {
   head () {
-    const title = `${this.article.title} - <markup>`
+    const title = this.article.title
 
     return {
       title,
@@ -19,37 +19,37 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.article.description,
+          content: this.article.description
         },
         {
           hid: 'og:type',
           property: 'og:type',
-          content: 'article',
+          content: 'article'
         },
         {
           hid: 'og:url',
           property: 'og:url',
-          content: `https://markup.hu/cikkek/${this.$route.params.slug}`,
+          content: `https://markup.hu/cikkek/${this.$route.params.slug}`
         },
         {
           hid: 'og:title',
           name: 'og:title',
-          content: title,
+          content: title
         },
         {
           hid: 'og:description',
           name: 'og:description',
-          content: this.article.description,
+          content: this.article.description
         },
         {
           hid: 'og:image',
           property: 'og:image',
-          content: this.article.image ?? '',
+          content: `https://markup.hu/static/${this.article.image}`
         },
         {
           hid: 'twitter:url',
           name: 'twitter:url',
-          content: `https://markup.hu/cikkek/${this.$route.params.slug}`,
+          content: `https://markup.hu/cikkek/${this.$route.params.slug}`
         },
         {
           hid: 'twitter:title',
@@ -59,12 +59,12 @@ export default {
         {
           hid: 'twitter:description',
           name: 'twitter:description',
-          content: this.article.description,
+          content: this.article.description
         },
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content: this.article.image ?? '',
+          content: `https://markup.hu/static/${this.article.image}`
         },
         {
           hid: 'twitter:label1',
@@ -89,18 +89,25 @@ export default {
         {
           hid: 'article:published_time',
           property: 'article:published_time',
-          content: this.article.createdAt,
+          content: this.article.createdAt
         },
         {
           hid: 'article:modified_time',
           property: 'article:modified_time',
-          content: this.article.updatedAt,
+          content: this.article.updatedAt
         },
         {
           hid: 'article:tag',
           property: 'article:tag',
-          content: this.article.tags ? this.article.tags.join(', ') : '',
+          content: this.article.tags ? this.article.tags.join(', ') : ''
         }
+      ],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `https://markup.hu/cikkek/${this.$route.params.slug}`
+        },
       ]
     }
   },
