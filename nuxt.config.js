@@ -2,6 +2,7 @@ export default {
   target: 'static',
   modules: ['@nuxt/content'],
   buildModules: ['@nuxtjs/tailwindcss'],
+  plugins: [{ src: '~/plugins/gtag.client.js' }],
   loading: false,
   components: true,
 
