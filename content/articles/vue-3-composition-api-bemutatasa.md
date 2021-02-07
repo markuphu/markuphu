@@ -25,9 +25,15 @@ A Composition API ezekre a problémákra nyújt megoldást a komponensek kódjá
 
 A fejlesztés során a [Vite](https://vitejs.dev/) csomagot fogjuk használni fejlesztői környezetként, amit Evan You (a Vue.js készítője) és társai készítettek. Ez egy villámgyors eszköz, amivel mind a fejlesztés, mind a buildek készítése másodpercek töredéke alatt megtörténik. A mi egyszerű todo alkalmazásunk fejlesztésekor fel se fog tűnni, hogy a háttérben a kód lefordul és automatikusan frissül a böngészőben látott verzió is.
 
+<base-note>Követelmények: <a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a> 12 vagy újabb verzió</base-note>
+
 Hozzuk létre tehát az alkalmazásunkat:
 ```bash
+# npm 6.x esetén
 npm init @vitejs/app todo --template vue
+
+# npm 7+ esetén szükséges egy extra dupla kötőjel
+npm init @vitejs/app todo -- --template vue
 ```
 
 A létrehozást követően lépjünk be a mappába, telepítsük a csomagokat, majd indítsuk el:
@@ -164,7 +170,7 @@ Látható, hogy a `setup` függvényen belül az adott változó `value` mezőj�
 
 ### Reagálás a változásokra
 
-Tegyük fel, hogy kíváncsiak vagyunk a teendők számára minden alkalommal, amikor egy új teendőt felveszünk és ezt a konzolra ki akarjuk íratni. Ezt a `watch` függvénnyel tudjuk megtenni, ami 3 argumentumot fogad:
+Tegyük fel, hogy kíváncsiak vagyunk a teendők számára minden alkalommal, amikor egy új teendőt felveszünk és ezt a konzolra ki akarjuk íratni. Ezt a `watch` függvénnyel tudjuk megtenni, ami 3 paramétert fogad:
 
 - egy **reaktív referenciát** vagy getter függvényt, amit vizsgálni akarunk
 - egy callback függvényt
