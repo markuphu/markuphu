@@ -33,12 +33,12 @@ export default {
       },
       {
         hid: 'og:title',
-        name: 'og:title',
+        property: 'og:title',
         content: '<markup>'
       },
       {
         hid: 'og:description',
-        name: 'og:description',
+        property: 'og:description',
         content: 'Légrádi Szabolcs szakmai blogja webfejlesztéshez kapcsolódó témákban.'
       },
       {

@@ -76,6 +76,7 @@ export default {
   jOMzGbj</a> by Szabolcs Légrádi (<a href="https://codepen.io/szlegradi">@szlegradi</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
+
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 <base-note>A CodePen példákban a Vue CDN-en elérhető verziója van betöltve, ahol minden függvény a `Vue` névtér alatt található.</base-note>
@@ -87,7 +88,7 @@ Tegyük hát reaktívvá a `ref` függvény segítségével.
 
 A `ref` a Reactive Reference, vagyis reaktív referencia rövidítése, nem csinál mást, mint a paraméterben átadott értéket egy objektumba csomagolja, aminek lesz egy `value` mezője.
 
-```vue{7,11}[components/TodoList.vue]
+```vue{7,11}[src/components/TodoList.vue]
 <template>
   <input type="text" v-model="todo" placeholder="Teendő">
   <p>{{ todo }}</p>

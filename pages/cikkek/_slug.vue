@@ -33,12 +33,12 @@ export default {
         },
         {
           hid: 'og:title',
-          name: 'og:title',
+          property: 'og:title',
           content: title
         },
         {
           hid: 'og:description',
-          name: 'og:description',
+          property: 'og:description',
           content: this.article.description
         },
         {
@@ -106,7 +106,7 @@ export default {
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `https://markup.hu/cikkek/${this.$route.params.slug}`
+          href: `https://markup.hu/cikkek/${this.$route.params.slug}/`
         },
       ]
     }
