@@ -1,5 +1,5 @@
 <template>
-  <nuxt-content :document="article" class="prose mx-auto"/>
+  <nuxt-content :document="article" class="max-w-7xl prose mx-auto"/>
 </template>
 
 <script>
