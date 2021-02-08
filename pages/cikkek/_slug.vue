@@ -29,7 +29,7 @@ export default {
         {
           hid: 'og:url',
           property: 'og:url',
-          content: `https://markup.hu/cikkek/${this.$route.params.slug}`
+          content: `https://markup.hu/cikkek/${this.$route.params.slug}/`
         },
         {
           hid: 'og:title',
@@ -49,7 +49,7 @@ export default {
         {
           hid: 'twitter:url',
           name: 'twitter:url',
-          content: `https://markup.hu/cikkek/${this.$route.params.slug}`
+          content: `https://markup.hu/cikkek/${this.$route.params.slug}/`
         },
         {
           hid: 'twitter:title',

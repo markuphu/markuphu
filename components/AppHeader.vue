@@ -4,7 +4,7 @@
       <div class="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
         <div class="flex justify-start md:flex-1">
           <nuxt-link to="/">
-            &lt;markup.hu&gt;
+            &lt;markup&gt;
           </nuxt-link>
         </div>
       </div>
