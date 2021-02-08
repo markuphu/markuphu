@@ -229,7 +229,7 @@ export default {
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 
-A konzolt megnyitva láthatjuk, hogy a teendők hozzáadásakor naplózásra kerül azok száma. Mivel tömböt vizsgálunk, ezért a `deep: true` beállítást is átadtuk a függvénynek, máskülönben csak akkor értesülnénk a változásokról, ha a `todos` változóra való referencia megváltozna. Primítv értékek esetén (mint számok vagy stringek) a `deep` beállításra nincs szükség.
+A konzolt megnyitva láthatjuk, hogy a teendők hozzáadásakor naplózásra kerül azok száma. Mivel tömböt vizsgálunk, ezért a `deep: true` beállítást is átadtuk a függvénynek, máskülönben csak akkor értesülnénk a változásokról, ha a `todos` változóra való referencia megváltozna. Primitív értékek esetén (mint számok vagy stringek) a `deep` beállításra nincs szükség.
 
 ### Önálló `computed` mezők
 
